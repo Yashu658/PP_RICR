@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Registration Form</h2>
+        <div class="form">
+           
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+                
+                <label for="confirm_password">Confirm Password:</label>
+                <input type="password" id="confirm_password" name="confirm_password" required>
+            
+                <label for="gender">Gender:</label>
+                <select id="gender" name="gender" required>
+                    <option value="">Select Gender</option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="other">Other</option>
+                </select> 
+                <label for="gender">gender : </label>
+                <div>
+                    <input type="radio" name="gender" id="Male" value="Male"><span>Male</span>
+                    <input type="radio" name="gender" id="Female" value="Female"><span>Female</span>
+                    <input type="radio" name="gender" id="Others" value="Others"><span>Others</span>
+                </div>
+                    
+                <label for="">Document : </label>
+                <div class="qu">
+                    
+                    <input type="checkbox" name="doc" id="10th DCM" value="10th DCM"><span>10th DCM</span>
+                    <input type="checkbox" name="doc" id="12th DCM" value="12th DCM"><span>12th DCM</span>
+                    <input type="checkbox" name="doc" id="aadhar card" value="Aadhar card"><span>Aadhar card</span>
+                   
+                </div>
+               
+                
+                <label for="dob">Date of Birth:</label>
+                <input type="date" id="dob" name="dob" required>
+                <input type="checkbox" name="t_c" id="accept" value="t_c">
+                <label for="chek">T_C</label>
+                <button type="submit" onclick="reg()">Register</button>
+            
+        </div>
+       
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
